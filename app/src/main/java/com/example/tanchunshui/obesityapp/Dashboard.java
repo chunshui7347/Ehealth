@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Dashboard extends AppCompatActivity {
 
+    private Button feedbackbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +17,9 @@ public class Dashboard extends AppCompatActivity {
         ImageButton food = (ImageButton) findViewById(R.id.imageButton2);
         ImageButton exercise = (ImageButton) findViewById(R.id.imageButton3);
         ImageButton assessment = (ImageButton) findViewById(R.id.imageButton4);
+
+        feedbackbtn = (Button) findViewById(R.id.feedbackBtn);
+
         food.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -36,5 +41,14 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        feedbackbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Dashboard.this, Feedback.class);
+                startActivity(i);
+            }
+        });
+
     }
 }
