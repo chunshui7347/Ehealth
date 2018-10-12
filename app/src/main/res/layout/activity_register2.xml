@@ -84,7 +84,7 @@
                 android:layout_width="229dp"
                 android:layout_height="37dp"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 tools:layout_editor_absoluteX="100dp"
                 tools:layout_editor_absoluteY="97dp" />
 
@@ -191,7 +191,7 @@
                 android:layout_width="227dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number|numberDecimal"
                 tools:layout_editor_absoluteX="175dp"
                 tools:layout_editor_absoluteY="349dp" />
 

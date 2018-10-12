@@ -9,7 +9,8 @@ import android.widget.ImageButton;
 
 public class Dashboard extends AppCompatActivity {
 
-    private Button feedbackbtn;
+    private Button feedbackbtn, upgradebtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,7 @@ public class Dashboard extends AppCompatActivity {
         ImageButton assessment = (ImageButton) findViewById(R.id.imageButton4);
 
         feedbackbtn = (Button) findViewById(R.id.feedbackBtn);
+        upgradebtn = (Button) findViewById(R.id.button7);
 
         food.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -46,6 +48,14 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Dashboard.this, Feedback.class);
+                startActivity(i);
+            }
+        });
+
+        upgradebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Dashboard.this,subscription.class);
                 startActivity(i);
             }
         });
