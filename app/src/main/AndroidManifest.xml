@@ -16,15 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register1"
-            android:windowSoftInputMode="stateHidden"/>
-        <activity android:name=".Register2"
-            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Register1"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Register2"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".Dashboard" />
         <activity android:name=".FoodSection" />
         <activity android:name=".ActivitySession" />
         <activity android:name=".Assessment" />
         <activity android:name=".Target" />
+        <activity android:name=".Feedback"></activity>
     </application>
 
 </manifest>

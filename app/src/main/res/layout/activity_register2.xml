@@ -39,10 +39,12 @@
 
             <TextView
                 android:id="@+id/textView7"
-                android:layout_width="105dp"
+                android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:text="Basic details"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="24sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="31dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -53,6 +55,8 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="Name     :"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/editText2"
                 app:layout_constraintTop_toTopOf="@+id/editText2" />
 
@@ -70,6 +74,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age         :"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="104dp" />
 
@@ -87,17 +93,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gender   :"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="31dp"
                 tools:layout_editor_absoluteY="141dp" />
 
-            <EditText
-                android:id="@+id/editText8"
-                android:layout_width="229dp"
-                android:layout_height="37dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                tools:layout_editor_absoluteX="100dp"
-                tools:layout_editor_absoluteY="237dp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
 
             <Space
                 android:layout_width="match_parent"
@@ -105,76 +109,87 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="105dp"
+                android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:text="Anthropometry"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="24sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="31dp"
                 tools:layout_editor_absoluteY="192dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Weight   :"
+                android:text="Weight (kg):"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="245dp" />
 
             <EditText
                 android:id="@+id/editText7"
                 android:layout_width="229dp"
-                android:layout_height="37dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number|numberDecimal"
                 tools:layout_editor_absoluteX="100dp"
                 tools:layout_editor_absoluteY="134dp" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
-                android:layout_height="17dp"
-                android:text="Height    :"
+                android:layout_height="wrap_content"
+                android:text="Height (cm):"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="31dp"
                 tools:layout_editor_absoluteY="282dp" />
 
             <EditText
                 android:id="@+id/editText10"
                 android:layout_width="229dp"
-                android:layout_height="37dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|number|numberDecimal"
                 tools:layout_editor_absoluteX="100dp"
                 tools:layout_editor_absoluteY="311dp" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
-                android:layout_height="17dp"
+                android:layout_height="wrap_content"
                 android:text="BMI        :"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="33dp"
                 tools:layout_editor_absoluteY="316dp" />
 
-            <EditText
-                android:id="@+id/editText9"
-                android:layout_width="229dp"
-                android:layout_height="37dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                tools:layout_editor_absoluteX="100dp"
-                tools:layout_editor_absoluteY="274dp" />
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
-                android:layout_height="17dp"
+                android:layout_height="wrap_content"
                 android:text="Waist Circumference  :"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="34dp"
                 tools:layout_editor_absoluteY="358dp" />
 
             <EditText
                 android:id="@+id/editText11"
                 android:layout_width="227dp"
-                android:layout_height="37dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
                 tools:layout_editor_absoluteX="175dp"
